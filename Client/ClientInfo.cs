@@ -3,5 +3,11 @@
 namespace Client;
 public class ClientInfo
 {
-    public EndPoint IpAdress { get; set; }
+    public string IPAddress { get; set; }
+    public int Port { get; set; }
+
+    public override string ToString()
+    {
+        return $"{IPAddress}:{Port}";
+    }
 }
